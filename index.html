@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>DOM Coffee Exercise</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <section class="card">
+    <h1 id="title">Morning Coffee</h1>
+
+    <p id="description">
+      Choose your mood and customize your drink.
+    </p>
+
+    <img 
+      id="coffee-img"
+      src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=500"
+      alt="Coffee cup"
+    >
+
+    <div class="buttons">
+      <button id="dark-btn">Dark Mode</button>
+      <button id="color-btn">Change Color</button>
+      <button id="text-btn">Change text</button>
+      
+    </div>
+
+    <div class="order-box">
+      <h2>Your Order</h2>
+      <p id="order-text">No coffee selected yet.</p>
+
+      <button class="coffee-option">Latte</button>
+      <button class="coffee-option">Espresso</button>
+      <button class="coffee-option">Cappuccino</button>
+      <button id="confirm-order" class="hidden">Confirm order</button>
+    </div>
+  </section>
+
+  <div id="order-modal" class="modal hidden">
+    <div class="modal-box">
+      <p id="confirm-question">Do you want to confirm order ?</p>
+
+      <button id="yes-order">Yes</button>
+      <button id="no-order">No</button>
+      <p id="sent-message" class="hidden">Your order has been sent</p>
+      <button id="go-back" class="hidden">Go back</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

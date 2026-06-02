@@ -1,0 +1,178 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3e5d8;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  transition: 0.6s;
+}
+
+
+
+
+.body.dark-mode{
+  background-color: #00004d;
+}
+
+
+.card {
+  background-color: white;
+  width: 420px;
+  padding: 25px;
+  border-radius: 18px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+  transition: 0.3s;
+}
+
+h1 {
+  color: #5c3d2e;
+}
+
+#description {
+  color: #555;
+}
+
+img {
+  width: 100%;
+  border-radius: 15px;
+  margin: 15px 0;
+  
+}
+
+
+
+button {
+  padding: 10px 14px;
+  margin: 6px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #8b5e3c;
+  color: white;
+}
+
+button:hover {
+  background-color: #5c3d2e;
+}
+
+.order-box {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #f7f1ec;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+
+.card.dark-mode {
+  background-color: #00004d;
+}
+
+.order-box.dark-mode {
+  background-color: #b3b3cc;
+}
+
+.dark-mode h1,
+.dark-mode h2,
+.dark-mode p {
+  color: white;
+}
+
+
+.dark-mode {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+
+
+.dark-mode h1,
+.dark-mode p,
+.dark-mode h2 {
+  color: white;
+}
+
+
+
+/*This is the confirm order button when displayed*/
+/*
+.confirm-order .order-display{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*And this is the confirm order buton when hidden*/
+
+
+.hidden{
+  display: none;
+}
+
+
+.hiddenmenu{
+  background-color: red;
+  z-index: 1;
+}
+
+
+/*Now we are gonna style the modal box for are you sure you want to continue
+when placing the order and confirming it*/
+
+
+/*This one modifies the modal box container*/
+.modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  background-color: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+
+}
+
+
+
+/*And this one modifies the modal box itself*/
+.modal-box{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+/*And this one hides the whole thing so we can make it 
+appear or dissapear at will*/
+.hidden{
+  display: none;
+}
+
+
+/*Now this makes sure the text inside the confirm order
+button stays black even if we toggle dark mode*/
+
+.modal-box p{
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+
